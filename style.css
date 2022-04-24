@@ -1,0 +1,64 @@
+@charset "UTF-8";
+html, body  {
+	font-family: 'Consolas', monospace;
+	background: #212121;
+	min-height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+span {
+	font-size: 6rem;
+	letter-spacing: 0.3rem;
+	color: #ddd;
+	text-shadow: 0.45rem 0.45rem 1rem rgba(0, 0, 0, 0.4);
+
+	display: block;
+	text-align: center;
+}
+
+#clock {
+	display: grid;
+	grid-gap: 1em;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+}
+
+#clock div {
+	width: 10vmin;
+	height: 10vmin;
+	border: 5px solid #ddd;
+	background-color: #212121;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#h11{grid-area: 4/1/5/2;}
+#h12{grid-area: 3/1/4/2;}
+
+#h21{grid-area: 4/2/5/3;}
+#h22{grid-area: 3/2/4/3;}
+#h23{grid-area: 2/2/3/3;}
+#h24{grid-area: 1/2/2/3;}
+
+#m11{grid-area: 4/3/5/4;}
+#m12{grid-area: 3/3/4/4;}
+#m13{grid-area: 2/3/3/4;}
+
+#m21{grid-area: 4/4/5/5;}
+#m22{grid-area: 3/4/4/5;}
+#m23{grid-area: 2/4/3/5;}
+#m24{grid-area: 1/4/2/5;}
+
+#s11{grid-area: 4/5/5/6;}
+#s12{grid-area: 3/5/4/6;}
+#s13{grid-area: 2/5/3/6;}
+
+#s21{grid-area: 4/6/5/7;}
+#s22{grid-area: 3/6/4/7;}
+#s23{grid-area: 2/6/3/7;}
+#s24{grid-area: 1/6/2/7;}
